@@ -11,7 +11,21 @@
   </properties>
   
     <dependencies>
-  <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+  <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson 
+  String json = "{\"brand\":\"Jeep\", \"doors\": 3}";
+
+Gson gson = new Gson();
+
+Car car = gson.fromJson(json, Car.class);
+
+  Car car = new Car();
+car.brand = "Rover";
+car.doors = 5;
+
+Gson gson = new Gson();
+
+String json = gson.toJson(car);
+  -->
 <dependency>
     <groupId>com.google.code.gson</groupId>
     <artifactId>gson</artifactId>
